@@ -2,3 +2,16 @@ C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Ejercicios POO\TrabajoFinal\Trab
 C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Ejercicios POO\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.SuggestedBindingRedirects.cache
 C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Ejercicios POO\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.MyForm.resources
 C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Ejercicios POO\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.GenerateResource.cache
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.MyForm.resources
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.GenerateResource.cache
+C:\Users\Janiel Franz\Desktop\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.AssemblyReference.cache
+C:\Users\Janiel Franz\Desktop\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Janiel Franz\Desktop\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.MyForm.resources
+C:\Users\Janiel Franz\Desktop\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.GenerateResource.cache
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal1\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal1\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal1\TrabajoFinal\x64\Debug\TrabajoFinal.MyForm.resources
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal1\TrabajoFinal\x64\Debug\TrabajoFinal.vcxproj.GenerateResource.cache
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\x64\Debug\TrabajoFinal.MenuJuego.resources

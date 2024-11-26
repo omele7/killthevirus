@@ -9,6 +9,7 @@ namespace TrabajoFinal {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Media;
 
 	/// <summary>
 	/// Resumen de MyForm
@@ -17,13 +18,18 @@ namespace TrabajoFinal {
 	{
 		Juego^ juego;
 
+	private:
+		SoundPlayer^ music;
 
 	public:
-		MyForm(void)
+		MyForm(int v, int t)
 		{
 			InitializeComponent();
+			srand(time(NULL));
 
-			juego = gcnew Juego();
+			bmpMap = gcnew Bitmap("imagenes/Fondo.png");
+
+			juego = gcnew Juego(v, t);
 		}
 
 	protected:
@@ -43,6 +49,7 @@ namespace TrabajoFinal {
 	private: System::ComponentModel::IContainer^ components;
 
 	private:
+		Bitmap^ bmpMap;
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
@@ -69,7 +76,7 @@ namespace TrabajoFinal {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(589, 510);
+			this->ClientSize = System::Drawing::Size(1022, 756);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
@@ -79,15 +86,34 @@ namespace TrabajoFinal {
 
 		}
 #pragma endregion
-	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+
+		void Musica()
+		{
+			music = gcnew SoundPlayer("sonido/CentroPokemon.wav");
+
+			music->PlayLooping();
+		}
+
+	Void MyForm_Load(Object^ sender, EventArgs^ e)
+	{
+		Musica();
 	}
 	Void Reloj_Tick(Object^ sender, EventArgs^ e) 
 	{
 		Graphics^ g = this->CreateGraphics();
-		g->Clear(Color::White);
 
-		juego->Mover(g);
-		juego->Mostrar(g);
+		BufferedGraphicsContext^ bfc = BufferedGraphicsManager::Current;
+		BufferedGraphics^ bf = bfc->Allocate(g, this->ClientRectangle);
+
+		bf->Graphics->Clear(Color::White);
+
+		bf->Graphics->DrawImage(bmpMap, 0, 0, bmpMap->Width * 0.75, bmpMap->Height * 0.75);
+		juego->Mostrar(bf->Graphics);
+
+		bf->Render(g);
+
+		if (juego->Mover(g) == false) this->Close(), music->Stop();
+
 	}
 	Void MyForm_KeyDown(Object^ sender, KeyEventArgs^ e) 
 	{

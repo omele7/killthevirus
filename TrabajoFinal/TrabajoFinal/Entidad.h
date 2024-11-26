@@ -2,6 +2,7 @@
 #include <iostream>
 #include <conio.h>
 #include <vector>
+#include <time.h>
 
 using namespace std;
 using namespace System;
@@ -42,9 +43,9 @@ public:
 		y += dy;
 	}
 
-	virtual void Mostrar(Graphics^ g, Bitmap^ imagenes)
+	virtual void Mostrar(Graphics^ g)
 	{
-		g->FillRectangle(Brushes::Black, Area());
+		g->FillRectangle(Brushes::White, Area());
 	}
 
 	void setDX(int aux)

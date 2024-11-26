@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      *  Executing task: D:/MinGW/bin/g++.exe -g "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal/*.cpp" -o "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal/bin/output.exe" -I "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal" 
+
+      g++.exe: error: C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal/*.cpp: Invalid argument
+      g++.exe: fatal error: no input files
+      compilation terminated.
+      
+       *  The terminal process "C:\WINDOWS\System32\cmd.exe /d /c D:/MinGW/bin/g++.exe -g "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal/*.cpp" -o "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal/bin/output.exe" -I "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal"" terminated with exit code: 1. 
+       *  Terminal will be reused by tasks, press any key to close it.    "name": "C++ Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal/bin/output.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "D:/MinGW/bin/gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build",
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}

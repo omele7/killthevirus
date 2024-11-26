@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Users/usuario/Desktop/UPC/Visual Studio 2019/Trabajo Algoritmos/TrabajoFinal/TrabajoFinal"
+      ],
+      "defines": [],
+      "compilerPath": "D:/MinGW/bin/g++.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}

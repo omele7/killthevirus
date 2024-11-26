@@ -119,18 +119,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MenuJuego.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Botiquines.h" />
     <ClInclude Include="Doctor.h" />
     <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Entidad.h" />
     <ClInclude Include="Juego.h" />
+    <ClInclude Include="MenuJuego.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="SalidaD.h" />
+    <ClInclude Include="SalidaI.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MenuJuego.resx">
+      <DependentUpon>MenuJuego.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>

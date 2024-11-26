@@ -1,18 +1,35 @@
 #pragma once
 #include "Entidad.h"
 
-
 class Enemigo : public Entidad
 {
 public:
 
 	Enemigo(Bitmap^ imagenes)
 	{
-		x = rand() % 500 ;
-		y = rand() % 500 ;
+		x = rand() % 650 + 200;
+		y = rand() % 650;
+
+		if (rand() % 2 == 0)
+		{
+			dx = 4;
+		}
+		else
+		{
+			dy = 4;
+		}
 
 		ancho = 25;
 		alto = 25;
+	}
+
+	void Mover(Graphics^ g)
+	{
+		if (!(x + dx >= 0 && x + ancho + dx < g->VisibleClipBounds.Width)) dx *= -1;
+		if (!(y + dy >= 0 && y + alto + dy < g->VisibleClipBounds.Height)) dy *= -1;
+
+		x += dx;
+		y += dy;
 	}
 
 	void Mostrar(Graphics^ g, Bitmap^ imagenes)
@@ -67,7 +84,7 @@ public:
 
 	bool Colision(Rectangle objeto)
 	{
-		for each (Enemigo * enm in enemigos)
+		for each (Enemigo* enm in enemigos)
 		{
 			if (enm->timeArea().IntersectsWith(objeto)) return true;
 		}

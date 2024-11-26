@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "Entidad.h"
 
 enum spriteDoctor
@@ -13,14 +12,16 @@ enum spriteDoctor
 class Doctor : public Entidad
 {
 private:
+	int vidas;
+	int puntos;
 	spriteDoctor accion;
 
 public:
 
-	Doctor(Bitmap^ imagenes)
+	Doctor(Bitmap^ imagenes, int v)
 	{
 		x = 30;
-		y = 200;
+		y = 300;
 
 		dx = dy = 0;
 
@@ -28,6 +29,10 @@ public:
 		ancho = imagenes->Width / 4;
 
 		accion = caminarDerecha;
+
+		vidas = v;
+
+		puntos = 0;
 	}
 
 	void Mover(Graphics^ g)
@@ -38,6 +43,9 @@ public:
 
 	void Mostrar(Graphics^ g, Bitmap^ imagenes)
 	{
+		g->DrawString("Vidas: " + vidas, gcnew Font("Arial", 12), Brushes::Red, 1, 1);
+		g->DrawString("Botiquines: " + puntos, gcnew Font("Arial", 12), Brushes::Green, 1, 40);
+
 		Rectangle corte = Rectangle(idx * ancho, accion * alto, ancho, alto);
 		g->DrawImage(imagenes, Area(), corte, GraphicsUnit::Pixel);
 
@@ -50,6 +58,31 @@ public:
 	void setAccion(spriteDoctor valor)
 	{
 		accion = valor;
+	}
+
+	spriteDoctor getAccion()
+	{
+		return accion;
+	}
+
+	void setVidas(int valor)
+	{
+		vidas += valor;
+	}
+
+	int getVidas()
+	{
+		return vidas;
+	}
+
+	int getPuntos()
+	{
+		return puntos;
+	}
+
+	void setPuntos(int valor)
+	{
+		puntos += valor;
 	}
 
 };

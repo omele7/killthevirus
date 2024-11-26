@@ -1,3 +1,11 @@
-﻿  MyForm.cpp
-  MyForm.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  TrabajoFinal.vcxproj -> C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Ejercicios POO\TrabajoFinal\x64\Debug\TrabajoFinal.exe
+﻿  MenuJuego.cpp
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\MyForm.h(28,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\MyForm.h(110,78): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\MyForm.h(110,55): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+  MyForm.cpp
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\MyForm.h(28,14): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\MyForm.h(110,78): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\TrabajoFinal\MyForm.h(110,55): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+  Generando código...
+  MenuJuego.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  TrabajoFinal.vcxproj -> C:\Users\usuario\Desktop\UPC\Visual Studio 2019\Trabajo Algoritmos\TrabajoFinal\x64\Debug\TrabajoFinal.exe

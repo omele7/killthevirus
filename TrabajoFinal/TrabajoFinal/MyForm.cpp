@@ -1,4 +1,4 @@
-#include "MyForm.h"
+#include "MenuJuego.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -7,5 +7,5 @@ void main()
 {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	Application::Run(gcnew TrabajoFinal::MyForm());
+	Application::Run(gcnew TrabajoFinal::MenuJuego());
 }
